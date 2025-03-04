@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration form</title>
+</head>
+<body>
+    <fieldset>
+    <table cellpadding="5" cellspacing="5">
+    <tr><th colspan="2">Registration Form</th></tr> 
+    <form>
+        <tr><td> <label for="">Firstname<font color="red">*</font></label></td>
+        <td><input type="text" placeholder="Enter First name" required pattern="[a-zA-Z]{4,6}" title="please enter 4 to 6 characters"></td>
+
+    <br><br>
+    <tr><td><label for="">Lastname<font color="red">*</font></label></td>
+        <td><input type="text" placeholder="Enter Last name" required pattern="[a-zA-Z]{4,6}" title="please enter 4 to 6 characters"></td>
+    </tr>
+    <br><br>
+    <tr><td><label for="">Phone number<font color="red">*</font></label></td>
+    <td><input type="text" placeholder="Enter phone number"required pattern=[0-9] title="please Enter 10 digits "></td>
+    </tr><br><br>
+<tr><td><label for="">Email<font color="red">*</font></label></td>
+<td><input type="email" placeholder="Enter email address"required pattern=[a-zz-A0-9] title="please Enter valid email address "></td>
+</tr><br><br>
+<tr><td><label for="">Gender<font color="red">*</font></label></td>
+<td><input type="radio" name="gen" id="">Male</td></tr>
+<td rowspan="3"></td>
+<tr><td><input type="radio" name="gen" id="">Female</td></tr>
+<tr><td><input type="radio" name="gen" id="">Prefer not to say</td></tr>
+<br><br>
+<tr><td><label for="">Date of Birth<font color="red">*</font></label></td>
+    <td><input type="datetime-local" placeholder="dd/mm/yyyy"required pattern=[0-9] title="please Enter valid date of birth "></td>
+    </tr><br><br>
+    <tr><td><label for="">Year of Graduation<font color="red">*</font></label></td>
+        <td><input list="year" placeholder="None">
+        <datalist id="year" >
+           <option value="2025"></option>
+           <option value="2024"></option> 
+           <option value="2023"></option>
+           <option value="2022"></option> 
+           <option value="2021"></option>
+           <option value="2020"></option> 
+           <option value="2019"></option>
+           <option value="2018"></option> 
+        </datalist></td>
+        </tr><br><br>
+        <tr><td> <label for="">College name<font color="red">*</font></label></td>
+            <td><input type="text" placeholder="" required pattern="[a-zA-Z]" ></td></tr>
+            <tr><td><label for="">Total years of experience<font color="red">*</font></label></td>
+                <td><input list="exp" placeholder="None">
+                <datalist id="exp" >
+                   <option value="Fresher">Fresher</option>
+                   <option value="0-1 years"></option> 
+                   <option value="1-2 years"></option>
+                   <option value="2-3 years"></option> 
+                   <option value="3-4 years"></option>
+                </datalist></td></tr>
+                <tr><td><label for="">Current CTC (LPA)<font color="red">*</font></label></td>
+                    <td><input list="C CTC" placeholder="None">
+                    <datalist id="C CTC" >
+                       <option value="Not Applicable">Not Applicable</option>
+                       <option value="1-3 LPA"></option> 
+                       <option value="3-5 LPA"></option>
+                       <option value="5-7 LPA"></option> 
+                       <option value="7+">7+</option>
+                </datalist></td></tr>
+                <tr><td><label for="">Expected CTC (LPA)<font color="red">*</font></label></td>
+                    <td><input list="E CTC" placeholder="None">
+                    <datalist id="E CTC" >
+                       <option value="Not Applicable"></option>
+                       <option value="3-5 LPA"></option> 
+                       <option value="5-7 LPA"></option>
+                       <option value="7-9 LPA"> </option> 
+                       <option value="9+">9+</option>
+                </datalist></td></tr>
+                <tr><td><label for="">Notice period<font color="red">*</font></label></td>
+                    <td><input list="Notice" placeholder="None">
+                    <datalist id="Notice" >
+                       <option value="Not Applicable"></option>
+                       <option value="Immediate"></option> 
+                       <option value="1 month"></option>
+                       <option value="2 months LPA"></option> 
+                       <option value="3 months"></option>
+                </datalist></td></tr>
+                <tr><td><label for="">State<font color="red">*</font></label></td>
+                <td><input list="indian-states" id="states" name="state" placeholder="None">
+       <datalist id="indian-states">
+        <option value="Andhra Pradesh">
+        <option value="Arunachal Pradesh">
+        <option value="Assam">
+        <option value="Bihar">
+        <option value="Chhattisgarh">
+        <option value="Goa">
+        <option value="Gujarat">
+        <option value="Haryana">
+        <option value="Himachal Pradesh">
+        <option value="Jharkhand">
+        <option value="Karnataka">
+        <option value="Kerala">
+        <option value="Madhya Pradesh">
+        <option value="Maharashtra">
+        <option value="Manipur">
+        <option value="Meghalaya">
+        <option value="Mizoram">
+        <option value="Nagaland">
+        <option value="Odisha">
+        <option value="Punjab">
+        <option value="Rajasthan">
+        <option value="Sikkim">
+        <option value="Tamil Nadu">
+        <option value="Telangana">
+        <option value="Tripura">
+        <option value="Uttar Pradesh">
+        <option value="Uttarakhand">
+        <option value="West Bengal">
+        <option value="Andaman and Nicobar Islands">
+        <option value="Chandigarh">
+        <option value="Dadra and Nagar Haveli and Daman and Diu">
+        <option value="Lakshadweep">
+        <option value="Delhi">
+        <option value="Puducherry"></td></tr>
+    </datalist>
+    <tr><td><label for="districts">Native District</label></td>
+    <td><input list="ap-districts" id="districts" name="district" placeholder="None">
+    <datalist id="ap-districts">
+        <option value="Anantapur">
+        <option value="Chittoor">
+        <option value="East Godavari">
+        <option value="Guntur">
+        <option value="Krishna">
+        <option value="Kurnool">
+        <option value="West Godavari">
+        <option value="Nellore">
+        <option value="Prakasam">
+        <option value="Srikakulam">
+        <option value="Visakhapatnam">
+        <option value="Vizianagaram">
+        <option value="West Godavari">
+        <option value="Kadapa">
+        <option value="Peddapalli">
+        <option value="Mahbubnagar">
+        <option value="Kakinada">
+        <option value="Rajahmundry">
+        <option value="Tirupati">
+    </datalist></td></tr>
+    <tr><td><label for="">How did you heared about this job<font color="red">*</font></label></td>
+        <td><input list="heared" placeholder="None">
+        <datalist id="heared" >
+           <option value="Linkein"></option>
+           <option value="Naukari"></option> 
+           <option value="Instagram"></option>
+           <option value="Others"></option> 
+    </datalist></td></tr>
+    <tr><td><label for="">Upload Resume</label></td>
+    <td><input type="file"></td></tr>
+    <tr><td><input type="checkbox" name="" id="">
+    <label for="">I have read the terms and conditions<font color="red">*</font></label></td></tr>
+        
+    <tr><td><input type="Reset" value="Reset"></td>
+    <td><input type="Submit" value="Submit"> </td></tr>
+    
+    </form>
+</table>
+</fieldset>
+</body>
+</html>
